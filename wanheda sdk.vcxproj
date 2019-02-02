@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BFD93737-8F53-46F1-8BFE-6812A5364973}</ProjectGuid>
+    <RootNamespace>wanheda sdk</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>wanheda sdk</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\ShahZaM\Desktop\fdgdg\external dependencies\steam api;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Program Files %28x86%29\DirectX SDK June 2010\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Users\ShahZaM\Desktop\fdgdg\external dependencies\steam api;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Program Files %28x86%29\DirectX SDK June 2010\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>shazee</TargetName>
+    <OutDir>.\output\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="cheats\exploits\exploits.h" />
+    <ClInclude Include="configurations\configurations.hpp" />
+    <ClInclude Include="csgo_sdk\utils\utils.h" />
+    <ClInclude Include="FEATURES\Aimbot.h" />
+    <ClInclude Include="FEATURES\AntiAim.h" />
+    <ClInclude Include="FEATURES\AutoWall.h" />
+    <ClInclude Include="FEATURES\Backtracking.h" />
+    <ClInclude Include="FEATURES\Chams.h" />
+    <ClInclude Include="FEATURES\custom_font.h" />
+    <ClInclude Include="FEATURES\D9Visuals.h" />
+    <ClInclude Include="FEATURES\EnginePred.h" />
+    <ClInclude Include="FEATURES\FakeLag.h" />
+    <ClInclude Include="FEATURES\Fakewalk.h" />
+    <ClInclude Include="FEATURES\Flashlight.h" />
+    <ClInclude Include="FEATURES\GloveChanger.h" />
+    <ClInclude Include="FEATURES\GrenadePrediction.h" />
+    <ClInclude Include="FEATURES\Legitbot.h" />
+    <ClInclude Include="FEATURES\modelchangershit.h" />
+    <ClInclude Include="FEATURES\Movement.h" />
+    <ClInclude Include="FEATURES\NewEventLog.h" />
+    <ClInclude Include="FEATURES\player_esp.h" />
+    <ClInclude Include="FEATURES\recv.h" />
+    <ClInclude Include="FEATURES\Resolver.h" />
+    <ClInclude Include="FEATURES\SkinChanger.h" />
+    <ClInclude Include="FEATURES\StickerChanger.h" />
+    <ClInclude Include="FEATURES\Visuals.h" />
+    <ClInclude Include="imgui\DX9\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="imgui\stb_rect_pack.h" />
+    <ClInclude Include="imgui\stb_textedit.h" />
+    <ClInclude Include="imgui\stb_truetype.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="csgo_sdk\math\math.h" />
+    <ClInclude Include="nightmode.h" />
+    <ClInclude Include="cheats\visuals\player_esp.h" />
+    <ClInclude Include="cheats\visuals\other_esp.h" />
+    <ClInclude Include="cheats\rage bot\resolver.h" />
+    <ClInclude Include="night_mode.h" />
+    <ClInclude Include="SDK\AnimLayer.h" />
+    <ClInclude Include="SDK\CBaseAnimating.h" />
+    <ClInclude Include="SDK\CBaseAnimState.h" />
+    <ClInclude Include="SDK\CBaseEntity.h" />
+    <ClInclude Include="SDK\CBaseWeapon.h" />
+    <ClInclude Include="SDK\CClientEntityList.h" />
+    <ClInclude Include="SDK\CGlobalVars.h" />
+    <ClInclude Include="SDK\CGlowObjectManager.h" />
+    <ClInclude Include="SDK\Checksum_CRC.h" />
+    <ClInclude Include="SDK\CInput.h" />
+    <ClInclude Include="SDK\CInputSystem.h" />
+    <ClInclude Include="SDK\Collideable.h" />
+    <ClInclude Include="SDK\ConVar.h" />
+    <ClInclude Include="SDK\CPanel.h" />
+    <ClInclude Include="SDK\CPrediction.h" />
+    <ClInclude Include="SDK\CTrace.h" />
+    <ClInclude Include="SDK\CUserCmd.h" />
+    <ClInclude Include="SDK\CViewSetup.h" />
+    <ClInclude Include="SDK\GameEvents.h" />
+    <ClInclude Include="FEATURES\EventListener.h" />
+    <ClInclude Include="SDK\IClient.h" />
+    <ClInclude Include="SDK\IEngine.h" />
+    <ClInclude Include="SDK\IEngineSound.h" />
+    <ClInclude Include="SDK\IMaterial.h" />
+    <ClInclude Include="SDK\IMemAlloc.h" />
+    <ClInclude Include="SDK\INetChannelInfo.h" />
+    <ClInclude Include="SDK\ISurface.h" />
+    <ClInclude Include="SDK\IVDebugOverlay.h" />
+    <ClInclude Include="SDK\IViewRenderBeams.h" />
+    <ClInclude Include="SDK\ModelInfo.h" />
+    <ClInclude Include="SDK\ModelRender.h" />
+    <ClInclude Include="SDK\NetChannel.h" />
+    <ClInclude Include="SDK\player_info_t.h" />
+    <ClInclude Include="SDK\RecvData.h" />
+    <ClInclude Include="SDK\RenderView.h" />
+    <ClInclude Include="SDK\StudioRender.h" />
+    <ClInclude Include="SDK\SurfaceData.h" />
+    <ClInclude Include="shit.h" />
+    <ClInclude Include="singleton.h" />
+    <ClInclude Include="UTILS\color.h" />
+    <ClInclude Include="UTILS\CUtlVector.h" />
+    <ClInclude Include="UTILS\general_utils.h" />
+    <ClInclude Include="HOOKS\hooks.h" />
+    <ClInclude Include="UTILS\input_handler.h" />
+    <ClInclude Include="UTILS\interfaces.h" />
+    <ClInclude Include="UTILS\logging.h" />
+    <ClInclude Include="UTILS\math.h" />
+    <ClInclude Include="UTILS\NetvarHookManager.h" />
+    <ClInclude Include="UTILS\offsets.h" />
+    <ClInclude Include="UTILS\playerinclude.h" />
+    <ClInclude Include="UTILS\qangle.h" />
+    <ClInclude Include="UTILS\quaternion.h" />
+    <ClInclude Include="UTILS\render.h" />
+    <ClInclude Include="UTILS\singleton.h" />
+    <ClInclude Include="UTILS\variables.h" />
+    <ClInclude Include="UTILS\vector2D.h" />
+    <ClInclude Include="UTILS\vector3D.h" />
+    <ClInclude Include="UTILS\vmatrix.h" />
+    <ClInclude Include="UTILS\vmt.h" />
+    <ClInclude Include="cheats\visuals\world_esp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="configurations\configurations.cpp" />
+    <ClCompile Include="configurations\XorStr.hpp" />
+    <ClCompile Include="csgo_sdk\utils\utils.cpp" />
+    <ClCompile Include="FEATURES\Aimbot.cpp" />
+    <ClCompile Include="FEATURES\AntiAim.cpp" />
+    <ClCompile Include="FEATURES\AutoWall.cpp" />
+    <ClCompile Include="FEATURES\Backtracking.cpp" />
+    <ClCompile Include="FEATURES\Chams.cpp" />
+    <ClCompile Include="FEATURES\D9Visuals.cpp" />
+    <ClCompile Include="FEATURES\EnginePred.cpp" />
+    <ClCompile Include="FEATURES\EventListener.cpp" />
+    <ClCompile Include="FEATURES\FakeLag.cpp" />
+    <ClCompile Include="FEATURES\Fakewalk.cpp" />
+    <ClCompile Include="FEATURES\Flashlight.cpp" />
+    <ClCompile Include="FEATURES\GloveChanger.cpp" />
+    <ClCompile Include="FEATURES\GrenadePrediction.cpp" />
+    <ClCompile Include="FEATURES\Legitbot.cpp" />
+    <ClCompile Include="FEATURES\Movement.cpp" />
+    <ClCompile Include="FEATURES\NewEventLog.cpp" />
+    <ClCompile Include="FEATURES\player_esp.cpp" />
+    <ClCompile Include="FEATURES\recv.cpp" />
+    <ClCompile Include="FEATURES\Resolver.cpp" />
+    <ClCompile Include="FEATURES\Skinchanger.cpp" />
+    <ClCompile Include="FEATURES\StickerChanger.cpp" />
+    <ClCompile Include="FEATURES\Visuals.cpp" />
+    <ClCompile Include="imgui\DX9\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="csgo_sdk\math\math.cpp" />
+    <ClCompile Include="nightmode.cpp" />
+    <ClCompile Include="cheats\visuals\player_esp.cpp" />
+    <ClCompile Include="cheats\visuals\other_esp.cpp" />
+    <ClCompile Include="cheats\rage bot\resolver.cpp" />
+    <ClCompile Include="night_mode.cpp" />
+    <ClCompile Include="SDK\CGlobalVars.cpp" />
+    <ClCompile Include="SDK\sdk.cpp" />
+    <ClCompile Include="UTILS\general_utils.cpp" />
+    <ClCompile Include="HOOKS\hooks.cpp" />
+    <ClCompile Include="UTILS\input_handler.cpp" />
+    <ClCompile Include="UTILS\interfaces.cpp" />
+    <ClCompile Include="UTILS\logging.cpp" />
+    <ClCompile Include="UTILS\math.cpp" />
+    <ClCompile Include="UTILS\NetvarHookManager.cpp" />
+    <ClCompile Include="UTILS\offsets.cpp" />
+    <ClCompile Include="UTILS\render.cpp" />
+    <ClCompile Include="UTILS\spoofedconvar.cpp" />
+    <ClCompile Include="UTILS\variables.cpp" />
+    <ClCompile Include="UTILS\vmt.cpp" />
+    <ClCompile Include="cheats\visuals\world_esp.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
